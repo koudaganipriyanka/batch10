@@ -11,9 +11,7 @@
       name: docker
       state: started
       enabled: true
-  - name: pull image
-    command: sudo docker pull priyankoudagani/test:2.0
-  - name: deploy addressbook application
+  - name: deploy  application
     command: sudo docker run -it -d -p 8081:8888 priyankoudagani/test:2.0
   handlers:
   - name: run update
